@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet, Dimensions, ViewStyle } from 'react-native';
+import { TouchableOpacity, Text, StyleSheet, Dimensions, ViewStyle, StyleProp } from 'react-native';
 
 const { width } = Dimensions.get('window');
 const buttonSize = (width - 100) / 3;
@@ -7,7 +7,7 @@ const buttonSize = (width - 100) / 3;
 interface NumberButtonProps {
   number?: string;
   onPress: () => void;
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
   activeOpacity?: number;
   children?: React.ReactNode;
 }

@@ -9,6 +9,11 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingBottom: 20,
   },
+  dropdownOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    justifyContent: 'flex-end',
+  },
   touchIdModal: {
     backgroundColor: '#FFFFFF',
     borderRadius: 16,
@@ -93,5 +98,34 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     color: '#333333',
+  },
+  dropdownContainer: {
+    backgroundColor: '#FFFFFF',
+    borderTopLeftRadius: 12,
+    borderTopRightRadius: 12,
+    maxHeight: 360,
+    paddingVertical: 8,
+  },
+  dropdownItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#F3F4F6',
+  },
+  dropdownFlag: {
+    fontSize: 22,
+    marginRight: 12,
+  },
+  dropdownCountry: {
+    flex: 1,
+    fontSize: 14,
+    color: '#000000',
+    fontWeight: '500',
+  },
+  dropdownCode: {
+    fontSize: 14,
+    color: '#6B7280',
   },
 });
