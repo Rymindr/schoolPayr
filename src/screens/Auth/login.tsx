@@ -40,7 +40,13 @@ const Login: React.FC<LoginProps> = ({ userName, onPinComplete, navigation }) =>
     handleBiometric,
     handleTouchIdCancel,
     handleFaceIdCancel,
-  } = useLogin({ userName, onPinComplete });
+  } = useLogin({
+    userName,
+    onPinComplete: pinValue => {
+      onPinComplete?.(pinValue);
+      navigation?.replace('HomeTabs');
+    },
+  });
 
   const handlePasswordLogin = () => {
     if (navigation) {

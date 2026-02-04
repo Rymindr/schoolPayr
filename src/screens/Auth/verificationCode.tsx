@@ -26,6 +26,7 @@ const VerificationCode: React.FC<VerificationCodeProps> = ({ navigation, route }
   } = useVerificationCode({
     onComplete: verifiedCode => {
       console.log('Verify code:', verifiedCode);
+      navigation.replace('HomeTabs');
     },
   });
 
