@@ -1,0 +1,170 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#FFFFFF',
+    },
+    headerRow: {
+        paddingHorizontal: 20,
+        paddingTop: 8,
+        paddingBottom: 4,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    backButton: {
+        width: 32,
+        height: 32,
+        borderRadius: 16,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    content: {
+        flex: 1,
+        paddingHorizontal: 20,
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: '700',
+        color: '#111827',
+        marginTop: 12,
+        marginBottom: 8,
+    },
+    subtitle: {
+        fontSize: 14,
+        color: '#6B7280',
+        lineHeight: 20,
+        marginBottom: 20,
+    },
+    inputContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        borderWidth: 1,
+        borderColor: '#E5E7EB',
+        borderRadius: 12,
+        backgroundColor: '#F9FAFB',
+        paddingHorizontal: 16,
+        height: 56,
+    },
+    input: {
+        flex: 1,
+        fontSize: 16,
+        color: '#111827',
+    },
+    searchIcon: {
+        marginLeft: 8,
+    },
+    schoolCard: {
+        marginTop: 12,
+        backgroundColor: '#F5F5F5',
+        borderRadius: 16,
+        padding: 16,
+    },
+    foundHeader: {
+        marginTop: 20,
+        fontSize: 14,
+        color: '#6B7280',
+        marginBottom: 0,
+    },
+    schoolInfoRow: {
+        flexDirection: 'row',
+        marginBottom: 16,
+    },
+    schoolIconContainer: {
+        width: 48,
+        height: 48,
+        borderRadius: 12,
+        backgroundColor: '#EC4899',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: 12,
+    },
+    schoolDetails: {
+        flex: 1,
+        justifyContent: 'center',
+    },
+    schoolName: {
+        fontSize: 16,
+        fontWeight: '600',
+        color: '#111827',
+        marginBottom: 2,
+    },
+    schoolAddress: {
+        fontSize: 14,
+        color: '#6B7280',
+        lineHeight: 16,
+    },
+    schoolIdText: {
+        fontSize: 14,
+        color: '#6B7280',
+        marginTop: 2,
+    },
+    notFoundContainer: {
+        marginTop: 20,
+        backgroundColor: '#F5F5F5',
+        borderRadius: 16,
+        padding: 32,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    notFoundImage: {
+        width: 64,
+        height: 64,
+        marginBottom: 8,
+    },
+    notFoundTitle: {
+        fontSize: 16,
+        fontWeight: '700',
+        color: '#111827',
+        marginTop: 12,
+        marginBottom: 8,
+    },
+    notFoundText: {
+        fontSize: 14,
+        color: '#6B7280',
+        textAlign: 'center',
+        lineHeight: 20,
+    },
+    signupCard: {
+        marginTop: 20,
+        backgroundColor: '#FFF1F2', // Light pink background
+        borderRadius: 12,
+        padding: 16,
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+    },
+    rocketIconContainer: {
+        width: 32,
+        height: 32,
+        borderRadius: 16,
+        backgroundColor: '#FFFFFF',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: 12,
+    },
+    signupContent: {
+        flex: 1,
+    },
+    signupText: {
+        fontSize: 14,
+        color: '#374151',
+        lineHeight: 18,
+    },
+    signupLink: {
+        fontSize: 14,
+        color: '#EC4899',
+        fontWeight: '600',
+        marginTop: 4,
+        textDecorationLine: 'underline',
+    },
+    confirmButton: {
+        marginTop: 8,
+        height: 52,
+        borderRadius: 14,
+        backgroundColor: '#EC4899',
+    },
+    confirmButtonText: {
+        color: '#FFFFFF',
+        fontWeight: '600',
+    },
+});

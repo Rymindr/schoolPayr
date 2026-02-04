@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
     height: 220,
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 40,
+    marginBottom: 80,
   },
   ringOuter: {
     position: 'absolute',
@@ -196,13 +196,13 @@ export const styles = StyleSheet.create({
     marginBottom: 16,
   },
   infoLabel: {
-    fontSize: 12,
+    fontSize: 13,
     color: '#9CA3AF',
     marginTop: 6,
   },
   infoValue: {
     fontSize: 13,
     color: '#111827',
-    fontWeight: '600',
+    fontWeight: '700',
   },
 });

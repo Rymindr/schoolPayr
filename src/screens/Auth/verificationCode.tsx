@@ -5,13 +5,14 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { ArrowLeft } from 'lucide-react-native';
 import { RootStackParamList } from '../../navigation/AppNavigator';
 import { Button, PasswordNumberPad } from '../../components/ui';
+import { ProgressBar } from '../../components/ProgressBar';
 import { useVerificationCode } from '../../hooks/useVerificationCode';
 import { styles } from './verificationCode.styles';
 
 type VerificationCodeProps = NativeStackScreenProps<RootStackParamList, 'VerificationCode'>;
 
 const VerificationCode: React.FC<VerificationCodeProps> = ({ navigation, route }) => {
-  const { phoneNumber } = route.params;
+  const { phoneNumber, isSignup } = route.params;
   const {
     code,
     seconds,
@@ -26,7 +27,11 @@ const VerificationCode: React.FC<VerificationCodeProps> = ({ navigation, route }
   } = useVerificationCode({
     onComplete: verifiedCode => {
       console.log('Verify code:', verifiedCode);
-      navigation.replace('HomeTabs');
+      if (isSignup) {
+        navigation.navigate('ConnectRymindr');
+      } else {
+        navigation.navigate('CreateNewPassword');
+      }
     },
   });
 
@@ -38,6 +43,7 @@ const VerificationCode: React.FC<VerificationCodeProps> = ({ navigation, route }
           <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
             <ArrowLeft size={20} color="#111827" />
           </TouchableOpacity>
+          {isSignup && <ProgressBar currentStep={1} />}
         </View>
 
         <View style={styles.content}>

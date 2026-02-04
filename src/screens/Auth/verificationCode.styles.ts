@@ -13,6 +13,8 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingTop: 8,
     paddingBottom: 4,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   backButton: {
     width: 32,

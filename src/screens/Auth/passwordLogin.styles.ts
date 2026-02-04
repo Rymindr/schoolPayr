@@ -24,9 +24,10 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logoImage: {
-    width: 125,
+    width: 135,
     height: 50,
     resizeMode: 'contain',
+    marginLeft: -8,
   },
   title: {
     fontSize: 24,
@@ -75,6 +76,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 24,
+    marginTop: 'auto',
   },
   signUpText: {
     fontSize: 16,

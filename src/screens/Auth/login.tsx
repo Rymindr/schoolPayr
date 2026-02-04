@@ -92,7 +92,7 @@ const Login: React.FC<LoginProps> = ({ userName, onPinComplete, navigation }) =>
       <StatusBar barStyle="dark-content" backgroundColor="#FFFFFF" />
       <View style={styles.content}>
         <View style={styles.logoContainer}>
-          <Image source={require('../../../assets/Images/Logo_Variaitons.png')} style={styles.logoSquare} />
+          <Image source={require('../../../assets/Images/Logo1.png')} style={styles.logoSquare} />
         </View>
 
         {/* Greeting */}

@@ -7,6 +7,7 @@ interface ButtonProps {
   style?: StyleProp<ViewStyle>;
   textStyle?: StyleProp<TextStyle>;
   activeOpacity?: number;
+  disabled?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -15,12 +16,14 @@ export const Button: React.FC<ButtonProps> = ({
   style,
   textStyle,
   activeOpacity = 0.7,
+  disabled,
 }) => {
   return (
     <TouchableOpacity
       style={[styles.button, style]}
-      onPress={onPress}
+      onPress={disabled ? undefined : onPress}
       activeOpacity={activeOpacity}
+      disabled={disabled}
     >
       <Text style={[styles.buttonText, textStyle]}>{title}</Text>
     </TouchableOpacity>

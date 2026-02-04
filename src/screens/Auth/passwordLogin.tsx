@@ -44,7 +44,7 @@ const PasswordLogin: React.FC<PasswordLoginProps> = ({ navigation }) => {
         phoneNumber: `${payload.countryCode} ${payload.mobileNumber}`.trim(),
       });
     },
-    onSignUp: () => console.log('Sign up'),
+    onSignUp: () => navigation.navigate('Signup'),
   });
 
   return (
@@ -54,7 +54,7 @@ const PasswordLogin: React.FC<PasswordLoginProps> = ({ navigation }) => {
         <View style={styles.content}>
           <View style={styles.logoContainer}>
             <Image
-              source={require('../../../assets/Images/Logo_Variaitons.png')}
+              source={require('../../../assets/Images/Logo1.png')}
               style={styles.logoImage}
             />
           </View>
@@ -125,7 +125,7 @@ const PasswordLogin: React.FC<PasswordLoginProps> = ({ navigation }) => {
             </View>
 
             <View style={styles.forgotPasswordContainer}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => navigation.navigate('ResetPassword')}>
                 <Text style={styles.forgotPasswordText}>Forgot password?</Text>
               </TouchableOpacity>
             </View>
@@ -142,15 +142,15 @@ const PasswordLogin: React.FC<PasswordLoginProps> = ({ navigation }) => {
                 style={styles.continueButton}
                 textStyle={styles.continueButtonText}
               />
-
-              <View style={styles.signUpContainer}>
-                <Text style={styles.signUpText}>Don't have an account? </Text>
-                <TouchableOpacity onPress={handleSignUp}>
-                  <Text style={styles.signUpLink}>Sign up</Text>
-                </TouchableOpacity>
-              </View>
             </View>
           </View>
+
+          <View style={styles.signUpContainer}>
+             <Text style={styles.signUpText}>Don't have an account? </Text>
+             <TouchableOpacity onPress={handleSignUp}>
+               <Text style={styles.signUpLink}>Sign up</Text>
+             </TouchableOpacity>
+           </View>
         </View>
 
         {showNumberPad && (

@@ -55,7 +55,7 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
   },
   logoSquare: {
-    width: 125,
+    width: 145,
     height: 50,
     borderRadius: 6,
     marginRight: 2,

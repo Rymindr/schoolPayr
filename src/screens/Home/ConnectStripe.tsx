@@ -24,7 +24,10 @@ const ConnectStripe: React.FC = () => {
 
   const handleCloseSuccess = () => {
     setShowSuccessModal(false);
-    navigation.goBack();
+    navigation.navigate('HomeTabs', {
+      screen: 'Home',
+      params: { isStripeConnected: true },
+    } as any);
   };
 
   return (

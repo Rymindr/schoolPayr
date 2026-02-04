@@ -41,14 +41,8 @@ export const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: '#FFFFFF',
     alignItems: 'center',
     justifyContent: 'center',
-    shadowColor: '#111827',
-    shadowOpacity: 0.08,
-    shadowRadius: 8,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 2,
   },
   card: {
     backgroundColor: '#FFFFFF',
@@ -59,7 +53,7 @@ export const styles = StyleSheet.create({
     shadowRadius: 10,
     shadowOffset: { width: 0, height: 6 },
     elevation: 2,
-    marginBottom: 16,
+    marginBottom: 10,
   },
   stripeLogo: {
     fontSize: 28,
@@ -92,6 +86,188 @@ export const styles = StyleSheet.create({
   stripeButtonText: {
     color: '#FFFFFF',
     fontWeight: '600',
+  },
+  // Connected State Styles
+  connectedCard: {
+    backgroundColor: '#FFFFFF',
+    borderRadius: 24,
+    padding: 20,
+    marginBottom: 16,
+    shadowColor: '#000',
+    shadowOpacity: 0.05,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 2,
+  },
+  schoolInfoRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 24,
+    borderBottomColor: '#E5E7EB',
+    borderBottomWidth: 1,
+    paddingBottom: 20,
+  },
+  schoolIconContainer: {
+    width: 40,
+    height: 40,
+    marginRight: 12,
+  },
+  schoolIcon: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 8,
+    marginTop: 2,
+  },
+  schoolInfoText: {
+    flex: 1,
+  },
+  connectedSchoolName: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#111827',
+  },
+  accountId: {
+    fontSize: 12,
+    color: '#9CA3AF',
+    marginTop: 2,
+  },
+  balanceContainer: {
+    marginBottom: 24,
+  },
+  balanceLabel: {
+    fontSize: 14,
+    color: '#6B7280',
+    marginBottom: 4,
+  },
+  balanceAmount: {
+    fontSize: 40,
+    fontWeight: '700',
+    color: '#000000',
+    letterSpacing: -1,
+  },
+  currencyLabel: {
+    fontSize: 14,
+    color: '#111827',
+    marginTop: 4,
+  },
+  collectButton: {
+    backgroundColor: '#EC4899',
+    borderRadius: 12,
+    paddingVertical: 14,
+    alignItems: 'center',
+    width: '100%',
+  },
+  collectButtonText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#FFFFFF',
+  },
+  manageItemsText: {
+    color: '#EC4899',
+    fontSize: 13,
+    fontWeight: '500',
+    marginTop: 4,
+  },
+  // Transactions
+  transactionsSection: {
+    marginTop: 8,
+    flex: 1,
+  },
+  emptyStateContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: 40,
+  },
+  emptyStateIcon: {
+    width: 64,
+    height: 64,
+    marginBottom: 16,
+    opacity: 0.5,
+  },
+  emptyStateTitle: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: 8,
+  },
+  emptyStateSubtitle: {
+    fontSize: 14,
+    color: '#6B7280',
+    textAlign: 'center',
+  },
+  transactionsHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  transactionsTitle: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: '#111827',
+  },
+  seeAllText: {
+    fontSize: 14,
+    color: '#EC4899',
+    fontWeight: '500',
+  },
+  transactionItem: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  transactionIcon: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#FCE7F3',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 12,
+  },
+  transactionInfo: {
+    flex: 1,
+  },
+  transactionName: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#111827',
+    marginBottom: 2,
+  },
+  transactionDate: {
+    fontSize: 14,
+    color: '#6B7280',
+  },
+  transactionAmountColumn: {
+    alignItems: 'flex-end',
+  },
+  transactionAmount: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#111827',
+    marginBottom: 2,
+  },
+  transactionItems: {
+    fontSize: 12,
+    color: '#6B7280',
+  },
+  dateRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 16,
+  },
+  dateText: {
+    fontSize: 16,
+    color: '#111827',
+    fontWeight: '500',
+  },
+  totalAmountText: {
+    fontSize: 14,
+    color: '#6B7280',
+  },
+  transactionIconBlue: {
+    backgroundColor: '#E0E7FF',
   },
   rowCard: {
     flexDirection: 'row',
